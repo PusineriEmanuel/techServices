@@ -1,5 +1,9 @@
 # 🔧 Soporte Técnico Pusineri E.
 
+## 🌐 **Demo en Vivo**
+
+**🔗 [Ver Demo](https://techserviceschascomus.netlify.app/)**
+
 ## 📖 Descripción del Proyecto
 
 **Soporte Técnico Pusineri E.** es mi emprendimiento personal en el mundo tecnológico, donde ofrezco servicios profesionales de soporte técnico especializado en computadoras y dispositivos móviles. Esta página web representa la cara digital de mi negocio, diseñada para conectar con clientes que buscan soluciones confiables y de calidad en el área técnica.
@@ -96,7 +100,7 @@ techServices/
 ### Clonar el Repositorio
 
 ```bash
-git clone [URL_DEL_REPOSITORIO]
+git clone https://github.com/PusineriEmanuel/techServices.git
 cd techServices
 ```
 
