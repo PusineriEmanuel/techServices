@@ -197,7 +197,7 @@ border: grey;
 
 
 
-}
+
 /* icons/logos/img-------------------------------------------*/
 
 
@@ -389,13 +389,6 @@ background: linear-gradient(275deg, rgba(181,244,240,1) 0%, rgba(141,170,228,1) 
   }
 }
 
-
-
-
-
-
-
-
 @media all and (max-width: 1024px){
 #logo-margin{
 	margin-left: 0px;
@@ -412,7 +405,6 @@ background: linear-gradient(275deg, rgba(181,244,240,1) 0%, rgba(141,170,228,1) 
 }
 }
 
-
 .seguime-en-mis-redes-tamaño-iconos{
 	width: 6%;
 }
@@ -420,13 +412,7 @@ background: linear-gradient(275deg, rgba(181,244,240,1) 0%, rgba(141,170,228,1) 
 #otro-servicio-cajas{ 
 width: 70%;
 }
-
 }
-
-
-
-
-
 
 @media all and (max-width: 768px){
 
@@ -442,66 +428,37 @@ width: 90%;
 
 footer{
 height: 400px;
-
 }
-
 }
-
-
 
 @media all and (max-width: 425px){
-
-
 .hola{
 	font-size: 40px;
-
 }
-
 #otro-servicio-cajas{ 
 width: 90%;
 }
-
 }
-
-
-
-
 
 @media all and (max-width: 375px){
-
-
 .h2-title{
   letter-spacing: 1px;
 	font-size: 50px;
-	
 }
-
 .hola{
 	font-size: 35px;
-
 }
-
 }
-
-
-
-
-
-
-
 
 @media all and (max-width: 320px){
-
-
 .h2-title{
   letter-spacing: 1px;
-	font-size: 50px;
-	
+	font-size: 50px;	
 }
-
 .hola{
 	font-size: 35px;
-
 }
-
+body{
+	width: 100%;
+}
 }
