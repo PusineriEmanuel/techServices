@@ -1,7 +1,40 @@
 /* base-------------------------------------------*/
 html,
 body {
-  background-color: #f7f7f7 !important;
+  background-color: #f7f7f7;
+}
+
+/* Prevenir overflow horizontal en todas las resoluciones */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Media query para resoluciones muy pequeñas como 320px */
+@media (max-width: 320px) {
+  html,
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .container-fluid {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 header {
@@ -13,10 +46,13 @@ footer {
   box-shadow: 1px 0px 6px 1px #dbdbdb;
   height: 200px;
   background-color: #ffffff;
+  position: relative;
 }
 
-#footer-margin-top {
-  margin-top: 70px;
+.footer-margin-top {
+  margin-top: 120px;
+  position: relative;
+  z-index: 1;
 }
 
 #myBtn {
@@ -109,6 +145,19 @@ footer {
   margin-right: 100px;
 }
 
+/* Ajustar margen derecho del navbar para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbarRightMargin {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbarRightMargin {
+    margin-right: 5px;
+  }
+}
+
 .sobremi {
   text-align: center;
   line-height: 35px;
@@ -116,8 +165,26 @@ footer {
   width: 700px;
 }
 
+/* Hacer responsive sobremi para pantallas pequeñas */
+@media (max-width: 575px) {
+  .sobremi {
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .sobremi {
+    width: 100%;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+
 .seguime-en-mis-redesTitleContainer {
-  margin-top: 350px !important;
+  margin-top: 350px;
 }
 .seguime-en-mis-redesTitleContainer h3 {
   letter-spacing: 1px;
@@ -126,7 +193,7 @@ footer {
   margin-bottom: 110px;
 }
 
-#titulo-tarjetas {
+.titulo-tarjetas {
   text-align: center;
   margin-top: 25px;
 }
@@ -149,7 +216,7 @@ footer {
   );
   box-shadow: 1px 1px 10px 1px #ffffff;
   border-radius: 10px;
-  width: 250px;
+  width: 300px;
   margin: 0 auto;
   transition: background-color 0.5s ease-in, box-shadow 0.5s ease-in;
 
@@ -157,6 +224,22 @@ footer {
   color: whitesmoke;
   padding: 10px;
   text-decoration: none;
+}
+
+/* Hacer botón responsivo */
+@media (max-width: 575px) {
+  .titulo-informative-button {
+    width: 250px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .titulo-informative-button {
+    width: 200px;
+    font-size: 13px;
+    padding: 8px;
+  }
 }
 
 .titulo-informative-button:hover {
@@ -216,11 +299,47 @@ footer {
   margin-left: 100px;
 }
 
-#caracteristicas-especiales-tamaño {
+/* Ajustar márgenes de logos para pantallas pequeñas */
+@media (max-width: 768px) {
+  #logo-margin,
+  #logo-margin0 {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  #logo-margin,
+  #logo-margin0 {
+    margin-left: 5px;
+  }
+
+  .navbar-brand img {
+    width: 150px;
+    height: auto;
+  }
+}
+
+.caracteristicas-especiales-tamaño {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: 15%;
+  max-width: 80px;
+}
+
+/* Ajustar tamaño de iconos para pantallas más grandes */
+@media (min-width: 768px) {
+  .caracteristicas-especiales-tamaño {
+    width: 20%;
+    max-width: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .caracteristicas-especiales-tamaño {
+    width: 25%;
+    max-width: 120px;
+  }
 }
 
 .seguime-en-mis-redes-tamaño-iconos {
@@ -250,12 +369,12 @@ li {
 }
 
 /* Underline styles */
-#underline-styles {
+.underline-styles {
   position: relative;
   color: grey;
 }
 
-#underline-styles::after {
+.underline-styles::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -272,24 +391,24 @@ li {
   transition: opacity 300ms, transform 300ms;
 }
 
-#underline-styles:hover::after,
-#underline-styles:focus::after {
+.underline-styles:hover::after,
+.underline-styles:focus::after {
   opacity: 1;
   transform: translate3d(0, 0.2em, 0);
 }
 
 /* Slide in */
-li:nth-child(2) #underline-styles {
+li:nth-child(2) .underline-styles {
   overflow: hidden;
 }
 
-li:nth-child(2) #underline-styles::after {
+li:nth-child(2) .underline-styles::after {
   opacity: 1;
   transform: translate3d(-100%, 0, 0);
 }
 
-li:nth-child(2) #underline-styles:hover::after,
-li:nth-child(2) #underline-styles:focus::after {
+li:nth-child(2) .underline-styles:hover::after,
+li:nth-child(2) .underline-styles:focus::after {
   transform: translate3d(0, 0, 0);
 }
 
@@ -316,9 +435,27 @@ li:nth-child(2) #underline-styles:focus::after {
   width: 470px;
 }
 
+/* Hacer responsive las imágenes para pantallas pequeñas */
+@media (max-width: 575px) {
+  .img-size {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+  }
+}
+
 .text-box {
   display: flex;
   margin-top: 200px;
+}
+
+/* Hacer responsive la text-box para pantallas pequeñas */
+@media (max-width: 575px) {
+  .text-box {
+    flex-direction: column;
+    margin-top: 100px;
+  }
 }
 
 .text-box p {
@@ -328,11 +465,31 @@ li:nth-child(2) #underline-styles:focus::after {
   max-width: 90%;
 }
 
+/* Ajustar párrafos para pantallas pequeñas */
+@media (max-width: 575px) {
+  .text-box p {
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+}
+
 .h3size {
   letter-spacing: 1px;
   font-size: 45px;
   margin-bottom: 50px;
   margin-top: 80px;
+}
+
+/* Ajustar títulos h3 para pantallas pequeñas */
+@media (max-width: 575px) {
+  .h3size {
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }
 
 .servicios-informative-button {
@@ -363,6 +520,14 @@ li:nth-child(2) #underline-styles:focus::after {
 }
 .servicios-informative-button-box {
   margin-top: 30px;
+}
+
+/* Centrar botones en pantallas pequeñas */
+@media (max-width: 575px) {
+  .servicios-informative-button-box {
+    text-align: center;
+    margin-top: 20px;
+  }
 }
 
 .reveal {
@@ -432,7 +597,7 @@ li:nth-child(2) #underline-styles:focus::after {
 }
 
 .caracteristicasEspecialesContainer {
-  margin-left: 0px !important;
+  margin-left: 0px;
 }
 
 .footerContainer {
@@ -486,7 +651,7 @@ li:nth-child(2) #underline-styles:focus::after {
 }
 
 @media all and (max-width: 425px) {
-  .hola {
+  .titulo {
     font-size: 40px;
   }
   #otro-servicio-cajas {
@@ -499,7 +664,7 @@ li:nth-child(2) #underline-styles:focus::after {
     letter-spacing: 1px;
     font-size: 50px;
   }
-  .hola {
+  .titulo {
     font-size: 35px;
   }
 }
@@ -509,7 +674,7 @@ li:nth-child(2) #underline-styles:focus::after {
     letter-spacing: 1px;
     font-size: 50px;
   }
-  .hola {
+  .titulo {
     font-size: 35px;
   }
   body {
