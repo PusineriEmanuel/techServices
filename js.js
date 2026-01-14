@@ -1,71 +1,71 @@
-function modo_oscuro(){
-var a = document.getElementsByTagName("html");
-var b = document.getElementsByTagName("p");
-var c = document.getElementsByTagName("footer"); 
-var d = document.getElementsByTagName("body"); 
-var e = document.getElementsByTagName("h1");
-var f = document.getElementsByTagName("h2"); 
-var g = document.getElementsByTagName("h3"); 
-//var h = document.getElementsByClassName("") 
-var h = document.getElementsByClassName("botoneraColor"); 
-var j = document.getElementById("logo-margin").src="img/logo_transparentWhite.png"; 
-var k = document.getElementById("logo-margin0").src="img/logo_transparentWhite.png";
-var q = document.getElementsByTagName("a"); 
-var qw = document.getElementsByClassName("card-title");
-var qe = document.getElementsByClassName("card");
-
-
-var i;
-
-for (i = 0; i < a.length; i++) {
-  a[i].style.backgroundColor = "#3D3D3D";
+function desarrolloweb() {
+  alert("sección en desarrollo");
 }
 
-for (i = 0; i < b.length; i++) {
-  b[i].style.color = "white";
+function modo_oscuro() {
+  var a = document.getElementsByTagName("html");
+  var b = document.getElementsByTagName("p");
+  var c = document.getElementsByTagName("footer");
+  var d = document.getElementsByTagName("body");
+  var e = document.getElementsByTagName("h1");
+  var f = document.getElementsByTagName("h2");
+  var g = document.getElementsByTagName("h3");
+  //var h = document.getElementsByClassName("")
+  var h = document.getElementsByClassName("botoneraColor");
+  var j = (document.getElementById("logo-margin").src =
+    "img/logo_transparentWhite.png");
+  var k = (document.getElementById("logo-margin0").src =
+    "img/logo_transparentWhite.png");
+  var q = document.getElementsByTagName("a");
+  var qw = document.getElementsByClassName("card-title");
+  var qe = document.getElementsByClassName("card");
+
+  var i;
+
+  for (i = 0; i < a.length; i++) {
+    a[i].style.backgroundColor = "#3D3D3D";
+  }
+
+  for (i = 0; i < b.length; i++) {
+    b[i].style.color = "white";
+  }
+
+  for (i = 0; i < c.length; i++) {
+    c[i].style.backgroundColor = "#242423";
+  }
+
+  for (i = 0; i < d.length; i++) {
+    d[i].style.backgroundColor = "#3D3D3D";
+  }
+
+  for (i = 0; i < e.length; i++) {
+    e[i].style.color = "white";
+  }
+
+  for (i = 0; i < f.length; i++) {
+    f[i].style.color = "white";
+  }
+
+  for (i = 0; i < g.length; i++) {
+    g[i].style.color = "white";
+  }
+
+  for (i = 0; i < h.length; i++) {
+    h[i].style.backgroundColor = "#242423";
+  }
+
+  for (i = 0; i < q.length; i++) {
+    q[i].style.color = "white";
+  }
+
+  for (i = 0; i < qw.length; i++) {
+    qw[i].style.color = "white";
+  }
+
+  for (i = 0; i < qe.length; i++) {
+    qe[i].style.backgroundColor = "#242423";
+  }
 }
-
-for (i = 0; i < c.length; i++) {
-  c[i].style.backgroundColor = "#242423";
-}
-
-for (i = 0; i < d.length; i++) {
-  d[i].style.backgroundColor = "#3D3D3D";
-}
-
-for (i = 0; i < e.length; i++) {
-  e[i].style.color = "white";
-}
-
-for (i = 0; i < f.length; i++) {
-  f[i].style.color = "white";
-}
-
-for (i = 0; i < g.length; i++) {
-  g[i].style.color = "white";
-}
-
-for (i = 0; i < h.length; i++) {
-  h[i].style.backgroundColor = "#242423";
-}
-
-for (i = 0; i < q.length; i++) {
-  q[i].style.color = "white";
-}
-
-for (i = 0; i < qw.length; i++) {
-  qw[i].style.color = "white";
-}
-
-for (i = 0; i < qe.length; i++) {
-  qe[i].style.backgroundColor = "#242423";
-}
-
-
-}
-
-
-
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -82,5 +82,29 @@ function reveal() {
     }
   }
 }
-
 window.addEventListener("scroll", reveal);
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 820 ||
+    document.documentElement.scrollTop > 820
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

@@ -3,30 +3,25 @@
 <head>
   <meta charset="utf-8">
   
-  <link rel="stylesheet" type="text/css" href="css.css">
-  
-                              <!-- bootstrap code -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-                            <!-- bootstrap css code -->
-  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
-                                <!-- ends here -->
+  <link rel="stylesheet" type="text/css" href="css.css">                   
+  <meta name="viewport" content="width=device-width, initial-scale=1">                       
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">                           
   <link rel="icon" href="img/icono_pestaña.ico">                              
-
   <title>Soporte Técnico Pusineri E.</title>
 </head>
 
-<body style="background-color: #f7f7f7;">
+<body>
 <button onclick="topFunction()" id="myBtn" title="Hacia Arriba"><img src="img/flecha-arriba.png" height="20" width="20"></button>
 
 <header>
- 
+  <!-- Navbar -->
 <nav class="navbar navbar-expand-xl navbar-light shadow-sm mb-5 botoneraColor">
   <div class="container-fluid"> <!--this div is probably not neccesary -->
     <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" width="200" height="70" id="logo-margin"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse nav justify-content-end" style="margin-right: 100px;" id="navbarNav">
+    <div class="collapse navbar-collapse nav justify-content-end navbarRightMargin"  id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" id="underline-styles" aria-current="page" href="index.html">Inicio</a>
@@ -40,53 +35,43 @@
         <li class="nav-item">
           <a class="nav-link" id="underline-styles" href="#Contactos">Contactos</a>
         </li>
-
       </ul>
     </div>
   </div>
 </nav>
-
-<script type="text/javascript">
-  
-  function desarrolloweb(){
-    alert("sección en desarrollo")
-
-  }
-</script>
-
+ <!-- Fin de Navbar -->
+</header>
 <!-- <div class="darkMode">
   <a href="#" onclick="modo_oscuro()"><img src="img/moon.png" width="40"></a>
 </div>  -->
 
-</header>
-
+<!-- Bienvenida -->
 <div class="container">
 <section class="row">
-  
-<h1 class="hola" style="margin-top:100px;">Hola!</h1>
+<h1 class="titulo">Hola!</h1>
 
-<div class="col-12" style=" justify-content:center; display: flex;">
-<p class="sobremi" style="width:700px;">Soy Emanuel Agustín Pusineri, tengo 26 años y soy Desarrollador Web con 2 años de experiencia. Vivo en Chascomus, Buenos Aires, y me especializo en microinformatica y el desarrollo frontend. Cuento con certificaciones en la UTN y continúo formándome constantemente porque realmente disfruto crear soluciones tanto digitales como fisicas que funcionen bien y sean útiles para las personas. </p>
+<div class="col-12 textoIntroductorio">
+<p class="sobremi">Soy Emanuel Agustín Pusineri, tengo 26 años y soy Desarrollador Web con 2 años de experiencia. Vivo en Chascomus, Buenos Aires, y me especializo en microinformatica y el desarrollo frontend. Cuento con certificaciones en la UTN y continúo formándome constantemente porque realmente disfruto crear soluciones tanto digitales como fisicas que funcionen bien y sean útiles para las personas. </p>
 </div>
 
-  <a href="img/curriculum.pdf" download class="hola-informative-button col-12" style="width:250px;">Descargar CV</a>
+  <a href="img/curriculum.pdf" download class="titulo-informative-button col-2">Descargar CV</a>
+<!-- Fin de Bienvenida -->
 
-
-<div style="margin-top:250px;"></div>
-<div class="container reveal fade-top"> <!--cambia posicion de animacion  -->
+<!-- Mis Servicios Section -->
+<div class="container reveal fade-top">
 <a id="soporte-tecnico"></a>
 <h2 class="col-12 h2-title">Mis Servicios</h2>
-<div style="margin-top:150px;"></div> 
+
 </div>
-<div class="container reveal fade-right"> <!--cambia posicion de animacion  -->  
+<div class="container reveal fade-right">
       <div class="text-box">
         <div class="col-6">
           <h3 class="h3size">Software</h3>
-          <p style="">
+          <p>
           Formateo de sistema operativo, backups, instalación de Windows 7, 8, 8.1, 10, y 11. Limpieza de archivos basura, virus, optimización del sistema y más.
           </p>
           <div class="servicios-informative-button-box">
-            <a href="mis-servicios-software.html" class="servicios-informative-button" style="width:250px;">Más Información</a>
+            <a href="mis-servicios-software.html" class="servicios-informative-button" >Más Información</a>
           </div>
         </div>
         <div class="col-6">
@@ -95,9 +80,9 @@
       </div>      
    
 </div>
-<div class="reveal fade-left"> <!--cambia posicion de animacion  -->
+<div class="reveal fade-left">
 
-<div style="margin-top:200px;"></div>
+
       <div class="text-box">
         <div class="col-6">
           <h3 class="h3size">Hardware</h3>
@@ -105,7 +90,7 @@
           Limpieza de PC general, cambio de pasta térmica, reemplazo de componentes, verificacion del estado de los componentes y más.
           </p>
             <div class="servicios-informative-button-box">
-            <a href="mis-servicios-hardware.html" class="servicios-informative-button" style="width:250px;">Más Información</a>
+            <a href="mis-servicios-hardware.html" class="servicios-informative-button" >Más Información</a>
           </div>   
         </div>
         <div class="col-6">
@@ -114,9 +99,8 @@
       </div>
       
 </div>
-<div class="reveal fade-bottom"> <!--cambia posicion de animacion  -->
+<div class="reveal fade-bottom">
 
-<div style="margin-top:200px;"></div>
       <div class="text-box">
         <div class="col-6">
           <h3 class="h3size">Asesoramiento</h3>
@@ -124,44 +108,34 @@
           Buscas invertir poco y obtener una mejora sustancial en tu computadora? te gustaría conocer aplicaciones o sitios ideales para lo que haces?
           </p>
           <div class="servicios-informative-button-box">
-             <a href="mis-servicios-asesoramiento.html" class="servicios-informative-button" style="width:250px;">Más Información</a>
+             <a href="mis-servicios-asesoramiento.html" class="servicios-informative-button">Más Información</a>
            </div>
         </div>
         <div class="col-6">
           <img src="img/circulo (4).png" class="img-fluid img-size"  alt="...">
         </div>
       </div>
- 
 </div>
+<!-- Fin de Mis Servicios Section -->
 
+<!-- Caracteristicas Especiales Section -->
+<div class="container reveal fade-top">
+<h2 class="col-12 h2-title h2-title-specialCaracteristics">Características especiales</h2>
 
-<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-
-
-
-
-
-<div style="margin-top:350px; margin-bottom: 50px;">
-<h2 class="col-12 h2-title">Características especiales</h2>
-</div>
-
-<div class="row row-cols-1 row-cols-md-3 g-4" style="position:flex;  margin-left: 0px;">
+<div class="row row-cols-1 row-cols-md-3 g-4 caracteristicasEspecialesContainer">
   <div class="col">
-    <div class="">
       <img src="img/exito.png" id="caracteristicas-especiales-tamaño" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title" id="titulo-tarjetas" style=""><strong>Garantía</strong></h5>
-        <p class="card-text" style="text-align:center; margin-top: 20px">No siente la diferencia que debería? traiga de nuevo la computadora, y la revisaré sin costo alguno.</p>
+        <h5 class="card-title" id="titulo-tarjetas"><strong>Garantía</strong></h5>
+        <p class="card-text pCards">No siente la diferencia que debería? traiga de nuevo la computadora, y la revisaré sin costo alguno.</p>
       </div>
-    </div>
   </div>
   <div class="col">
     <div class="">
       <img src="img/hora.png" id="caracteristicas-especiales-tamaño" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title" id="titulo-tarjetas" style=""><strong>Entrega rápida</strong></h5>
-        <p class="card-text" style="text-align:center; margin-top: 20px">Se le garantiza que recebirá la prioridad y eficacia que merece.</p>
+        <h5 class="card-title" id="titulo-tarjetas"><strong>Entrega rápida</strong></h5>
+        <p class="card-text pCards">Se le garantiza que recebirá la prioridad y eficacia que merece.</p>
       </div>
     </div>
   </div>
@@ -169,78 +143,46 @@
     <div class="">
       <img src="img/me-gusta.png" id="caracteristicas-especiales-tamaño" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title" id="titulo-tarjetas" style=""><strong>Precio comprensible</strong></h5>
-        <p class="card-text" style="text-align:center; margin-top: 20px;">Le ofrecemos el mejor precio-calidad posible.</p>
+        <h5 class="card-title" id="titulo-tarjetas"><strong>Precio comprensible</strong></h5>
+        <p class="card-text pCards">Le ofrecemos el mejor precio-calidad posible.</p>
       </div>
     </div>
   </div>
 </div>
+</div>
+<!-- Fin de Caracteristicas Especiales Section -->
 
- 
-<div style=" margin-top: 350px;"><h3 class="seguime-en-mis-redes">Seguime en mis redes</h3></div>
+<!-- Seguime en mis redes Section -->
+<div class="seguime-en-mis-redesTitleContainer reveal fade-bottom"><h3>Seguime en mis redes</h3></div>
 <a id="Contactos"></a>
-<div style="display: flex;align-items: center; justify-content: center; ">
+<div class="seguime-en-mis-redes-Container reveal fade-bottom">
 
 <a href="https://www.instagram.com/pusinerie/" target="_blank" title="Seguime en Instagram!" class="seguime-en-mis-redes-tamaño-iconos"><img src="img/instagram1.png" height="auto" width="100%"></a>
 <a href="https://www.facebook.com/profile.php?id=100070813005611" target="_blank" title="Seguime en Facebook!" class="seguime-en-mis-redes-tamaño-iconos"><img src="img/facebook.png" height="auto" width="100%"></a>
 </div>
-
-
-
-
 </section>
 </div>
+<!-- Fin de Seguime en mis redes Section -->
 
-
-
-<div class="container-fluid" style="margin-top:200px;">
-<footer class="row" style="margin-top:100px">
+<!-- Footer -->
+<div class="container-fluid footerContainer">
+<footer class="row">
 
 <div class="col-md-6 col-12" id="footer-margin-top">
   <img src="img/logo.jpg" width="200" height="70" id="logo-margin0" class="mx-auto d-block">
 </div>
 
-<div class="col-md-6 col-12" id="footer-margin-top" style="display: flex;justify-content: center;">  
+<div class="col-md-6 col-12 footerinfo" id="footer-margin-top">  
   <p><img src="img/telephone.png" width="15" height="15"> +54 2241-578076</br>
   <img src="img/gmail.png" width="15" height="15"> emanuelpusineri@outlook.com</br>
   <img src="img/placeholder.png" width="15" height="15"> Tucumán 167, Chascomús, Buenos Aires
   </p>
 </div>
-
-
-<script>
-//Get the button
-var mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 820 || document.documentElement.scrollTop > 820) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
-
-
 </footer>
 </div>
-
-<!-- bootstrap js code -->
+<!-- Fin Footer -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-                           <!-- ends here -->
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
-<script type="text/javascript" src="js.js"></script>       <!--its not neccesary to use the type attribute -->                   
-
+<script type="text/javascript" src="js.js"></script>                  
 </body>
 </html>
