@@ -103,7 +103,15 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+/* btn to top */
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollButton = document.getElementById("myBtn");
+
+  if (scrollButton) {
+    scrollButton.addEventListener("click", topFunction);
+  }
+});
+
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
