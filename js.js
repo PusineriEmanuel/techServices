@@ -1,8 +1,15 @@
 function desarrolloweb() {
   alert("sección en desarrollo");
 }
+/* asi lo hago ahora, y sin jquery, vanilla js */
+/* const darkMode = document.getElementById("dark-mode");
+darkMode.addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
+  document.querySelector("h1").classList.toggle("dark-mode");
+}); */
 
-function modo_oscuro() {
+/* asi hacia el modo oscuro antes */
+/* function modo_oscuro() {
   var a = document.getElementsByTagName("html");
   var b = document.getElementsByTagName("p");
   var c = document.getElementsByTagName("footer");
@@ -65,7 +72,7 @@ function modo_oscuro() {
   for (i = 0; i < qe.length; i++) {
     qe[i].style.backgroundColor = "#242423";
   }
-}
+} */
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");

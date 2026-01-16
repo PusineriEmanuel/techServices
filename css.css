@@ -1,76 +1,5 @@
-/* base-------------------------------------------*/
-html,
 body {
   background-color: #f7f7f7;
-  overflow-x: hidden;
-}
-
-/* Media query para resoluciones muy pequeñas como 320px */
-@media (max-width: 320px) {
-  html,
-  body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 0;
-    margin-right: 0;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  .container-fluid {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  .navbarRightMargin {
-    margin-right: 5px;
-  }
-
-  #logo-margin,
-  #logo-margin0 {
-    margin-left: 5px;
-  }
-
-  .navbar-brand img {
-    width: 150px;
-    height: auto;
-  }
-
-  .sobremi {
-    width: 100%;
-    padding: 0 10px;
-    font-size: 14px;
-    line-height: 25px;
-  }
-
-  .h2-title {
-    letter-spacing: 0.5px;
-    font-size: 42px;
-    padding: 0 5px;
-    word-wrap: break-word;
-  }
-
-  .h2-title-specialCaracteristics {
-    font-size: 36px;
-    letter-spacing: 0px;
-    margin-bottom: 100px;
-    padding: 0 10px;
-  }
-
-  .titulo {
-    font-size: 35px;
-  }
-
-  body {
-    width: 100%;
-  }
 }
 
 header {
@@ -282,10 +211,14 @@ footer {
   top: 1px;
 }
 
-.darkMode {
+/* .darkModeButton {
   position: fixed;
-  left: 30px;
+  left: 50px;
 }
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+} */
 
 .card-buttom {
   background: rgb(181, 244, 240);
@@ -507,27 +440,9 @@ li:nth-child(2) .underline-styles:focus::after {
   width: 470px;
 }
 
-/* Hacer responsive las imágenes para pantallas pequeñas */
-@media (max-width: 575px) {
-  .img-size {
-    width: 100%;
-    max-width: 300px;
-    margin: 20px auto;
-    display: block;
-  }
-}
-
 .text-box {
   display: flex;
   margin-top: 200px;
-}
-
-/* Hacer responsive la text-box para pantallas pequeñas */
-@media (max-width: 575px) {
-  .text-box {
-    flex-direction: column;
-    margin-top: 100px;
-  }
 }
 
 .text-box p {
@@ -537,31 +452,11 @@ li:nth-child(2) .underline-styles:focus::after {
   max-width: 90%;
 }
 
-/* Ajustar párrafos para pantallas pequeñas */
-@media (max-width: 575px) {
-  .text-box p {
-    text-align: center;
-    max-width: 100%;
-    margin-bottom: 30px;
-    padding: 0 20px;
-  }
-}
-
 .h3size {
   letter-spacing: 1px;
   font-size: 45px;
   margin-bottom: 50px;
   margin-top: 80px;
-}
-
-/* Ajustar títulos h3 para pantallas pequeñas */
-@media (max-width: 575px) {
-  .h3size {
-    font-size: 35px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    text-align: center;
-  }
 }
 
 .servicios-informative-button {
@@ -592,14 +487,6 @@ li:nth-child(2) .underline-styles:focus::after {
 }
 .servicios-informative-button-box {
   margin-top: 30px;
-}
-
-/* Centrar botones en pantallas pequeñas */
-@media (max-width: 575px) {
-  .servicios-informative-button-box {
-    text-align: center;
-    margin-top: 20px;
-  }
 }
 
 .reveal {
@@ -722,6 +609,38 @@ li:nth-child(2) .underline-styles:focus::after {
   }
 }
 
+@media (max-width: 575px) {
+  .servicios-informative-button-box {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .h3size {
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .text-box {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .img-size {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+  }
+  .text-box p {
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+}
+
 @media all and (max-width: 425px) {
   .titulo {
     font-size: 40px;
@@ -746,6 +665,73 @@ li:nth-child(2) .underline-styles:focus::after {
   .seguime-en-mis-redes-tamaño-iconos {
     width: 18%;
     margin: 0 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  html,
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .container-fluid {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .navbarRightMargin {
+    margin-right: 5px;
+  }
+
+  #logo-margin,
+  #logo-margin0 {
+    margin-left: 5px;
+  }
+
+  .navbar-brand img {
+    width: 150px;
+    height: auto;
+  }
+
+  .sobremi {
+    width: 100%;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .h2-title {
+    letter-spacing: 0.5px;
+    font-size: 42px;
+    padding: 0 5px;
+    word-wrap: break-word;
+  }
+
+  .h2-title-specialCaracteristics {
+    font-size: 36px;
+    letter-spacing: 0px;
+    margin-bottom: 100px;
+    padding: 0 10px;
+  }
+
+  .titulo {
+    font-size: 35px;
+  }
+
+  body {
+    width: 100%;
   }
 }
 
