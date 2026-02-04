@@ -168,7 +168,9 @@ footer {
   border-radius: 10px;
   width: 300px;
   margin: 0 auto;
-  transition: background-color 0.5s ease-in, box-shadow 0.5s ease-in;
+  transition:
+    background-color 0.5s ease-in,
+    box-shadow 0.5s ease-in;
 
   text-align: center;
   color: whitesmoke;
@@ -238,7 +240,9 @@ footer {
     rgba(141, 170, 228, 1) 100%
   );
   border: grey;
-  transition: background-color 0.5s ease-in, box-shadow 0.5s ease-in;
+  transition:
+    background-color 0.5s ease-in,
+    box-shadow 0.5s ease-in;
 }
 
 /* buttons-------------------------------------------*/
@@ -393,7 +397,9 @@ li {
     rgba(141, 170, 228, 1) 100%
   );
   opacity: 0;
-  transition: opacity 300ms, transform 300ms;
+  transition:
+    opacity 300ms,
+    transform 300ms;
 }
 
 .underline-styles:hover::after,
@@ -470,7 +476,9 @@ li:nth-child(2) .underline-styles:focus::after {
   box-shadow: 1px 1px 10px 1px #ffffff;
   border-radius: 5px;
 
-  transition: background-color 0.5s ease-in, box-shadow 0.5s ease-in;
+  transition:
+    background-color 0.5s ease-in,
+    box-shadow 0.5s ease-in;
 
   text-align: center;
   color: whitesmoke;
@@ -645,6 +653,15 @@ li:nth-child(2) .underline-styles:focus::after {
   .titulo {
     font-size: 40px;
   }
+  .titulo-servicios {
+    font-size: 36px;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+  }
+  .decorar-centrar-h1 {
+    height: 120px;
+    margin: 0 10px;
+  }
   #otro-servicio-cajas {
     width: 90%;
   }
@@ -661,6 +678,15 @@ li:nth-child(2) .underline-styles:focus::after {
   }
   .titulo {
     font-size: 35px;
+  }
+  .titulo-servicios {
+    font-size: 32px;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+  }
+  .decorar-centrar-h1 {
+    height: 110px;
+    margin: 0 15px;
   }
   .seguime-en-mis-redes-tamaño-iconos {
     width: 18%;
@@ -730,9 +756,24 @@ li:nth-child(2) .underline-styles:focus::after {
     font-size: 35px;
   }
 
+  .titulo-servicios {
+    font-size: 28px;
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+  }
+
+  .decorar-centrar-h1 {
+    height: 100px;
+    margin: 0 10px;
+  }
+
   body {
     width: 100%;
   }
+}
+
+.card-title {
+  text-align: center;
 }
 
 /* NOTES
