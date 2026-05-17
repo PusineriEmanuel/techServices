@@ -1,10 +1,13 @@
 body {
-  background-color: #f7f7f7;
+  background-color: #076155;
+  color: white;
 }
 
 header {
   width: 100%;
   margin-bottom: 150px;
+  position: relative;
+  z-index: 2;
 }
 
 footer {
@@ -49,13 +52,26 @@ footer {
 .botoneraColor {
   background-color: #ffffff;
 }
+.nasaImgContainer {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+}
+.nasaimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
 /* base-------------------------------------------*/
 
 /* titles-------------------------------------------*/
 
 .titulo-servicios {
   letter-spacing: 1px;
-  color: black;
+  color: #ffffff;
   font-size: 48px;
   font-family: "Arial";
   text-align: center;
@@ -69,7 +85,7 @@ footer {
 
 .titulo {
   letter-spacing: 1px;
-  color: black;
+  color: #ffffff;
   font-size: 50px;
   font-family: "Arial";
   text-align: center;
@@ -95,7 +111,7 @@ footer {
 
 .h2-title {
   letter-spacing: 2px;
-  color: black;
+  color: #ffffff;
   font-size: 50px;
   font-family: "Arial";
   text-align: center;
@@ -122,6 +138,7 @@ footer {
   line-height: 35px;
   margin-bottom: 50px;
   width: 700px;
+  font-size: 1.5rem;
 }
 
 /* Hacer responsive sobremi para pantallas pequeñas */
@@ -380,7 +397,7 @@ li {
 /* Underline styles */
 .underline-styles {
   position: relative;
-  color: grey;
+  color: rgb(255, 255, 255);
 }
 
 .underline-styles::after {
